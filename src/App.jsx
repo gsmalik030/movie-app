@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import getData from './utils/api.js'
+
 function App() {
   
   useEffect(() => {
@@ -8,7 +9,6 @@ function App() {
 
   const apiTest = async () => {
     const data = await getData("/movie/popular");
-    console.log(data);
   }
 
   return (
