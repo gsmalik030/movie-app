@@ -15,31 +15,29 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  useEffect(()=>{
-    window.scrollTo(0, 0)
-  },[location])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
-  const controlNavEffect= ()=>{
-    if (window.scrollY>200){
-      if(window.scrollY>lastScrollY && !mobileMenu){
-        setShow("hide")
+  const controlNavEffect = () => {
+    if (window.scrollY > 200) {
+      if (window.scrollY > lastScrollY && !mobileMenu) {
+        setShow('hide');
+      } else {
+        setShow('show');
       }
-      else{
-        setShow("show")
-      }
+    } else {
+      setShow('top');
     }
-    else{
-      setShow("top")
-    }
-    setLastScrollY(windo.scrollY)
-  }
+    setLastScrollY(window.scrollY);
+  };
 
-  useEffect(() =>{
-    window.addEventListener("scroll", controlNavEffect);
-    return ()=>{
-      window.removeEventListener("scroll",controlNavEffect )
-    }
-  },[lastScrollY])
+  useEffect(() => {
+    window.addEventListener('scroll', controlNavEffect);
+    return () => {
+      window.removeEventListener('scroll', controlNavEffect);
+    };
+  }, [lastScrollY]);
 
   const opemMobileMenu = () => {
     setMobileMenu(true);
@@ -66,7 +64,7 @@ const Header = () => {
     } else {
       navigate('/explore/tvShow');
     }
-    setMobileMenu(false)
+    setMobileMenu(false);
   };
 
   return (
