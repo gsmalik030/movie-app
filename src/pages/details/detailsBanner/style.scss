@@ -60,7 +60,7 @@
                 border-radius: 12px;
                 @include md {
                     max-width: 350px;
-                    height: 100%;
+                    min-height: 525px;
                 }
             }
         }
