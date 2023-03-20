@@ -29,7 +29,6 @@ const Cast = ({ data, loading }) => {
                             let imgUrl = item.profile_path
                                 ? url.profile + item.profile_path
                                 : avatar;
-                                console.log(url)
                             return (
                                 <div key={item.id} className="listItem">
                                     <div className="profileImg">
