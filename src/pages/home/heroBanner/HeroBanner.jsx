@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './heroBanner.scss';
+import './herobanner.scss';
 import useFetch from '../../../hooks/useFetch';
 import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
