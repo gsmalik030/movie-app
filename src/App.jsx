@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setUrl,setGenres } from './store/homeSlice.js';
-import PageNotFount from './pages/404/PageNotFound';
 import Explore from './pages/explore/Explore.jsx';
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
