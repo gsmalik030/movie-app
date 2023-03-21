@@ -24,7 +24,7 @@ function App() {
     const data = await fetchData('/configuration');
     const imgUrl = {
       backdrop: data.images.secure_base_url + 'original',
-      poster: data.images.secure_base_url + 'w500',
+      poster: data.images.secure_base_url + 'original',
       profile: data.images.secure_base_url + "original",
     }
     dispatch(setUrl(imgUrl));
