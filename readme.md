@@ -24,7 +24,7 @@
 
 # 📖 Movie-App <a name="about-project"></a>
 
-**Movie-App** is a showcase for books.
+**Movie-App** is a showcase for movies.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -42,8 +42,9 @@
 
 ### Key Features <a name="add components"></a>
 
-- Showcase covid 19 statistics
-- Show details stats about covid
+- In this movies you can search movies and tv shows.
+- You can watch trending movies and tv shows.
+- You can filter movies according to your choice.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
